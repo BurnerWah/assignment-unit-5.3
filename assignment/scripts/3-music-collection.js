@@ -8,7 +8,7 @@ console.log("***** Music Collection *****")
  * @property {number} yearPublished
  */
 
-/** @type {album[]} */
+/** @type {Album[]} */
 const myCollection = []
 
 /**
