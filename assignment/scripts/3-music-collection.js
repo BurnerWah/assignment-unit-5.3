@@ -1,6 +1,27 @@
 console.log("***** Music Collection *****")
 // Safe Zone -- Write code below this line
 
+/**
+ * @typedef {Object} Album
+ * @property {string} title
+ * @property {string} artist
+ * @property {number} yearPublished
+ */
+
+/**
+ *
+ * @param {Album[]} collection
+ * @param {string} title
+ * @param {string} artist
+ * @param {number} yearPublished
+ * @returns {Album}
+ */
+function addToCollection(collection, title, artist, yearPublished) {
+  const album = { title: title, artist: artist, yearPublished: yearPublished }
+  collection.push(album)
+  return album
+}
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
