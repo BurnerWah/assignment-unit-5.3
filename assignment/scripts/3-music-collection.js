@@ -9,7 +9,6 @@ console.log("***** Music Collection *****")
  */
 
 /**
- *
  * @param {Album[]} collection
  * @param {string} title
  * @param {string} artist
