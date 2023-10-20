@@ -49,6 +49,23 @@ console.log(
 )
 console.table(myCollection)
 
+/**
+ * Prints the contents of a collection
+ * @param {Album[]} collection the collection to print the contents of
+ */
+function showCollection(collection) {
+  // how i prefer to write this
+  // collection.forEach(({ title, artist, yearPublished }) =>
+  //   console.log(`${title} by ${artist}, published in ${yearPublished}`)
+  // )
+  // How I will actually write this for this class
+  for (const { title, artist, yearPublished } of collection) {
+    console.log(`${title} by ${artist}, published in ${yearPublished}`)
+  }
+}
+
+showCollection(myCollection)
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
