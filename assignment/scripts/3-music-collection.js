@@ -9,11 +9,12 @@ console.log("***** Music Collection *****")
  */
 
 /**
- * @param {Album[]} collection
- * @param {string} title
- * @param {string} artist
- * @param {number} yearPublished
- * @returns {Album}
+ * Adds an album to a collection
+ * @param {Album[]} collection The collection to add the album to
+ * @param {string} title The album totle
+ * @param {string} artist The album artist
+ * @param {number} yearPublished The year the album was published
+ * @returns {Album} The album that was added
  */
 function addToCollection(collection, title, artist, yearPublished) {
   /** @type {Album} */
