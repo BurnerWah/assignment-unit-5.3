@@ -66,6 +66,30 @@ function showCollection(collection) {
 
 showCollection(myCollection)
 
+/**
+ * Finds albums in a collection by a certain artist
+ * @param {Album[]} collection The collection to search
+ * @param {string} artist The artist to search for
+ * @returns {Album[]} The albums found (can be empty)
+ */
+function findByArtist(collection, artist) {
+  // How i prefer to write this
+  // return collection.filter((album) => album.artist === artist)
+  /** @type {Album[]} */
+  const foundAlbums = []
+  for (const album of collection) {
+    if (album.artist === artist) {
+      foundAlbums.push(album)
+    }
+  }
+  return foundAlbums
+}
+
+console.log(addToCollection(myCollection, "Alchemist", "Savant", 2012))
+console.table(findByArtist(myCollection, "Savant"))
+console.table(findByArtist(myCollection, "KITCALIBER"))
+console.table(findByArtist(myCollection, "me"))
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
