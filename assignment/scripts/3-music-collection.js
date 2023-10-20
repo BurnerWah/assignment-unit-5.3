@@ -8,6 +8,9 @@ console.log("***** Music Collection *****")
  * @property {number} yearPublished
  */
 
+/** @type {album[]} */
+const myCollection = []
+
 /**
  * Adds an album to a collection
  * @param {Album[]} collection The collection to add the album to
