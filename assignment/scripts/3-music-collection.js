@@ -25,6 +25,29 @@ function addToCollection(collection, title, artist, yearPublished) {
   collection.push(album)
   return album
 }
+console.log(addToCollection(myCollection, "HALCYONDAZE", "KITCALIBER", 2020))
+console.log(addToCollection(myCollection, "_SNDWRK/gh", "greenhouse", 2022))
+console.log(addToCollection(myCollection, "Alchemist 2", "Savant", 2022))
+console.log(
+  addToCollection(
+    myCollection,
+    "FINAL FANTASY VII REMAKE (Original Soundtrack)",
+    "Nobuo Uematsu",
+    2020
+  )
+)
+console.log(
+  addToCollection(myCollection, "Super Ghostbusters", "Vinesauce Joel", 2018)
+)
+console.log(
+  addToCollection(
+    myCollection,
+    "Disasters for Piano",
+    "Disasterpeace & David Peacock",
+    2017
+  )
+)
+console.table(myCollection)
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
